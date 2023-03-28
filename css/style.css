@@ -331,16 +331,18 @@ justify-content: center;
     text-align: center;
 }
 .boton-vermas{
-    width: 100%;
-    height: 3rem;
-    padding: 3%;
+    width: 49%;
+    background-color: #B4CDE6;
+    font-family:'Poppins', sans-serif;
+    font-weight: 400;
+    padding: 10px;
     font-size: 1rem;
-    font-family:'Poppins', sans-serif; 
-    text-decoration: overline;
-    text-transform: uppercase;
+    border-radius: 41px;
+    border: #F5EFE6; 
+    margin: auto;
     justify-content: center;
-    text-align: center;
     align-items: center;
+    text-align: center;
 }
 
 .section-referencias{
