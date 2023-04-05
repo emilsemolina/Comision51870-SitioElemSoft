@@ -1,0 +1,33 @@
+.piepagina-contacto{
+    background-color: $background-principal;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 15px;
+    justify-content: space-evenly; 
+    justify-self: center;
+    align-self: center;
+.pie-pagina{
+    p{
+        font-family: 'Labrada', serif;
+            font-size: 25;
+            font-style: italic;
+            text-align:justify; 
+            padding-top: 25px;
+    }
+}
+.logo-piepagina{
+    padding: 1rem;
+    justify-self: center;
+}
+.pie-pagina2{
+    p{
+        @extend .pie-pagina;
+    }
+}
+.pie.pagina3{
+    p{
+        @extend .pie-pagina;
+    }
+}
+}

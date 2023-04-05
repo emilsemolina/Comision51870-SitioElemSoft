@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import "./media/media-800";
+.contenedor-headercontacto{
+   padding-bottom:10px;
+   background-color:$background-principal;
+   display: grid;   
+   grid-template-columns: 1fr 1fr;
+.logo-ES-grid{
+    display: flex;
+    justify-content:left;
+    height: 55px;
+    }
+}
+/* navbar**/
+.navbar-contacto{
+    @include flex;
+
+ li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(2, 2, 2);
+    }
+}

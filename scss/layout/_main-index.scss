@@ -1,0 +1,203 @@
+@import "./media/media-800";
+main{
+    background-color: $background-tercero;
+    .contenido-principal{
+        h1{
+        font-family: 'Poppins', sans-serif;
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+        padding-top: 20px;    
+        }
+    }
+    .box-ultimostrabajos{
+        @include grid(100%, "card-cuerpo card-cuerpo2 card-cuerpo3", 3rem, 15px, 30px, center);
+    .card-cuerpo{
+    width: 300px;
+    height: 400px;
+    padding: 5px;
+    background-color: #F5EFE6;
+    border-style: groove;
+    margin-left: 1rem;
+    border-radius: 20px;
+    img{
+    object-fit: contain; 
+    padding: 2rem;
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+    }
+    p{
+    font-family: 'Labrada', serif;
+    font-size: 50;
+    font-style: italic;
+    text-align:center;
+    }
+    }
+    .card-cuerpo2{
+        @extend .card-cuerpo;
+    }
+    .card-cuerpo3{
+        @extend .card-cuerpo;
+    }
+    }
+}
+.section-clientes{
+background-color:$background-secundario;
+width: 100%;
+display: flex;
+flex-direction:column;
+flex-wrap: wrap;
+margin-top: 30px;
+align-items: center;
+justify-content: center;
+div{
+    h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 20px;
+    }
+}
+.logos-clientes{
+    display: grid;
+   grid-template-areas: 
+   "imgTerramar imgCPS imgDestino imgScotia";
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    justify-content: center;
+    img{
+    width: 100%;
+    max-height: 150px;
+    padding: 2rem;
+    display: flex;
+    gap: 30px;
+    }
+}
+}
+.box-productos{
+    width: 100%;
+    margin-top: 30px;
+    align-items: center;
+.titulo-productos{
+    h1{
+        font-family: 'Poppins', sans-serif;
+        font-size:xx-large;
+        font-weight: 400;
+        text-align: center;
+    }
+}
+.contenedor-productos{
+    display: grid;
+    grid-template-areas: 
+    "producto-1 producto-2 producto-3";
+     width: 100%;
+     gap: 3rem;
+     padding-top: 20px;
+     padding-bottom: 30px;
+     justify-content: center;
+     align-items: center;  
+     .producto-1{
+        h2{
+            font-family: 'Labrada', serif;
+            font-size: 40;
+            font-weight: bold;
+            font-style: normal;
+            text-align: center;
+        }
+        h3{
+            font-family: 'Labrada', serif;
+            font-size: 30;
+            font-style: italic;
+            text-align: center;     
+        }
+     }
+    .producto-2{
+        @extend .producto-1;
+        }
+    .producto-3{
+        @extend .producto-1;
+    }
+     .boton-vermas{
+        width: 49%;
+        background-color: #B4CDE6;
+        font-family:'Poppins', sans-serif;
+        font-weight: 400;
+        padding: 10px;
+        font-size: 1rem;
+        border-radius: 41px;
+        border: #F5EFE6; 
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center; 
+     }
+    }
+}
+.section-referencias{
+    background-color: #D9D9D9;
+    .contenido-referencias{
+        h1{
+            font-family:'Poppins', sans-serif;
+            font-size:xx-large;
+            font-weight:400;
+            text-align:center;
+            padding-top: 20px; 
+        }
+    }
+    .box-referencias{
+        display: grid;
+        width: 100%;
+        grid-template-areas: 
+        "card-referencia1 card-referencia2 card-referencia3";
+         gap: 3rem;
+        padding-top: 15px;
+        padding-bottom: 30px;
+        justify-content: center;
+        .card-referencia1{
+            padding: 10px;
+            margin: 5%;
+            width: 300px;
+            height: 400px;
+            background-color: #F5EFE6;
+            border-style: groove;
+            margin-left: 1rem;
+            border-radius: 20px;
+            h2{
+                font-family: 'Labrada', serif;
+                font-size: 40;
+                font-style: normal;
+                text-align: center;
+            }
+            h3{
+                font-family: 'Labrada', serif;
+                font-size: 30;
+                font-style:oblique;
+                text-align: center;
+            }
+            p{
+                font-family: 'Labrada', serif;
+                font-size: 30;
+                font-style: italic;
+                text-align:justify; 
+                padding-top: 20px;
+            }
+            img{
+                display: block;
+                width: 30px;
+                border: 50px;
+                margin: 0 auto;
+                padding-top: 20px;
+            }
+        }
+    .card-referencia2{
+        @extend .card-referencia1;
+    } 
+    .card-referencia3{
+        @extend .card-referencia1;
+    }   
+    }
+}
+

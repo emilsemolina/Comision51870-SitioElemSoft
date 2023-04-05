@@ -1,0 +1,22 @@
+@mixin flex{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    justify-self: center;
+    align-self: center;  
+    list-style: none;
+    padding-top: 19px;
+}
+@mixin grid ($width, $gTa, $gap, $Pt, $Pb, $justify){
+    display: grid;
+    width: $width;
+    grid-template-areas: $gTa;
+    gap: $gap;
+    padding-top: $Pt;
+    padding-bottom: $Pb;
+    justify-content: $justify;
+}
+@mixin colum{
+    grid-area: card-cuerpo;
+    justify-self: center;
+}
