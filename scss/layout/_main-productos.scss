@@ -1,0 +1,48 @@
+.banner-productos{
+    width: 100%;
+    height: 269px;
+    background-image: url(../assets/img/banner-productos.png);
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(7,1fr);
+   
+    h1{
+        grid-column: 5/2;
+        grid-row: 2/7;
+        align-self: center;
+        font-size: 36px;   
+    }
+}
+.titulo-productos{
+    h1{
+        font-family: 'Labrada', serif;
+        font-size:50px;
+        font-style:normal;
+        text-align:justify; 
+        text-align: center;  
+    }
+    h2{
+        @include style ('Labrada' serif, 40px, italic, justify, center)
+    }
+}
+.funciones-sistema{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    padding-top: 15px;
+    padding-bottom: 35px;
+    justify-items: center;
+    .botones-producto{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap:1rem; 
+        .bondades-producto{
+            display: grid;
+            justify-content: center;
+            .boton-elemsoft{
+                background-color: $background-secundario;
+            }
+        }
+    }
+}

@@ -4,7 +4,10 @@
 @import "layout/header";
 @import "layout/main-index";
 @import "layout/footer";
-@import "./layout/media/media-800";
-@import "./layout/media/media-700";
-@import "./layout/media/media-600";
+@import "./layout/main-nosotros";
+@import "./layout/main-productos";
+@import "./layout/main-portfolio";
+@import "./layout/main-contacto";
+@import "./components/bootstrap.scss";
+@import "./layout/media/media-768";
 @import "./layout/media/media-400";

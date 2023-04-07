@@ -1082,7 +1082,7 @@ grid-template-rows: 1fr 1fr;
          ;
         }
     .logo-contacto{
-         grid-area: logo-contacto;
+        grid-area: logo-contacto;
         justify-self: center;
         width: 50%;
         margin:0 auto;

@@ -1,0 +1,58 @@
+.contenedor-main{
+    padding-bottom:10px;
+    border-bottom: 1px solid #F5EFE6;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .logo-contacto{
+        width: 100%;
+        img{
+            width: 70%;
+            margin:0 auto;
+            display: block;
+        }
+    }
+    .card-contacto{
+        padding: 6%;
+        width: 600px;
+        height: 600px;
+        background-color: #F5EFE6;
+        border-style: groove;
+        margin-left: 40px;
+        border-radius: 30px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        .texto-card{
+            legend{
+                display: flex;
+                font-family: 'Labrada', serif;
+                margin: 20px;
+                font-size: 30px;
+                font-style:oblique;
+                text-align: center;
+                text-decoration:underline ;
+            }
+        .opciones{
+            width: 100%;
+            background-color: #ffffff;
+            padding:10px;
+            margin-bottom: 10px;
+            border: 1px solid blanchedalmond;
+        }
+        .opciones-mensaje{
+            @extend .opciones;
+            padding: 30px;
+        }
+        }
+    .boton-enviar{
+        background-color: $background-secundario;
+        text-align: center;
+        font-size: 15px;
+        padding: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        margin: 10px auto; 
+    }
+    }
+}

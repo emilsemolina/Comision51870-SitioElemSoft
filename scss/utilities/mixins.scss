@@ -1,6 +1,6 @@
 @mixin flex{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: right;
     width: 100%;
     justify-self: center;
     align-self: center;  
@@ -16,7 +16,15 @@
     padding-bottom: $Pb;
     justify-content: $justify;
 }
-@mixin colum{
-    grid-area: card-cuerpo;
-    justify-self: center;
+
+@mixin colum ($Ga, $justify){
+    grid-area:$Ga;
+    justify-self: $justify;
+}
+@mixin style ($Ff, $Fs, $Fst, $Ta, $Ta2){
+    font-family: $Ff;
+        font-size:$Fs;
+        font-style:$Fst;
+        text-align:$Ta; 
+        text-align: $Ta2; 
 }

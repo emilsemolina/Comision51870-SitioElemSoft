@@ -1,0 +1,42 @@
+.banner-portfolio{
+    background-image: url(../assets/img/banner-portfolio.png);
+    background-size: cover;
+    
+    height: 20rem;
+    background-position: center;
+    img{
+       width: 100%; 
+    }
+}
+.contenedor-clientes{
+    padding-top: 43px;
+    padding-bottom: 50px;
+    .titulo-portfolio{
+        h1{
+            @include style ('Labrada', 40px, italic, justify, center)
+        }
+    }
+.trabajamos-clientes{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 4rem;
+    padding-top: 15px;
+    justify-content: space-evenly; 
+    img{
+        max-height: 150px;
+        padding: 2rem;
+        display: flex;
+        gap: 30px;
+    } 
+}
+}
+.contenedor-trabajos{
+    background-color:$background-secundario;
+ .titulo-portfolio2{
+    h1{
+        @include style ('Labrada', 35px, normal, justify, center);
+        padding-top:90px;
+    }
+ }
+}

@@ -1,4 +1,8 @@
-@import "./media/media-800";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 main{
     background-color: $background-tercero;
     .contenido-principal{
@@ -51,7 +55,7 @@ flex-wrap: wrap;
 margin-top: 30px;
 align-items: center;
 justify-content: center;
-div{
+.nuestros-clientes{
     h1{
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
@@ -69,14 +73,15 @@ div{
     padding-bottom: 30px;
     justify-content: center;
     img{
-    width: 100%;
-    max-height: 150px;
-    padding: 2rem;
-    display: flex;
-    gap: 30px;
+        width: 100%;
+        max-height: 150px;
+        padding: 2rem;
+        display: flex;
+        gap: 30px; 
     }
-}
-}
+    }  
+    }
+
 .box-productos{
     width: 100%;
     margin-top: 30px;

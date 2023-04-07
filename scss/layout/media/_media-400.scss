@@ -1,0 +1,283 @@
+@media (max-width:400px){
+    .contenedor-headercontacto{
+     grid-template-columns: 1fr;
+     grid-template-rows: 1fr 1fr;
+     .logo-ES-grid{
+        justify-self: center;
+    
+}
+.navbar-contacto{
+    justify-content: center;
+}
+.navbar-nav{
+        justify-self: center;
+        gap: 0;
+     li{
+        justify-self: center;
+     }
+    }
+     }
+    }
+
+
+@media (max-width: 400px){
+    main{
+     background-color:$background-tercero;
+    .contenido-principal{
+        h1{
+         font-size: 20px;
+            }
+    }
+.box-ultimostrabajos {
+    grid-template-areas:
+    "card-cuerpo"
+    "card-cuerpo2"
+    "card-cuerpo3"
+   ;
+    .card-cuerpo{
+        grid-area: card-cuerpo;
+        justify-self: center;
+        }
+    .card-cuerpo2 {
+        grid-area: card-cuerpo2;
+        justify-self: center;
+        }
+    .card-cuerpo3{
+        grid-area: card-cuerpo3;
+        justify-self: center;
+           }
+        }
+    }
+} 
+@media (max-width: 400px) {
+    .section-clientes{
+        background-color: $background-secundario;
+    
+    .nuestros-clientes{
+        h1{
+            font-size: 20px;
+        }
+    }
+    .logos-clientes {
+        grid-template-areas:
+        "imgTerramar"
+        "imgCPS"
+        "imgDestino" 
+        "imgScotia"
+        ;
+        img{
+            width: 80%;
+            max-height: 150px;
+            padding: 2rem;
+            display: flex;
+            gap: 30px;    
+        }
+        }
+    }
+}
+@media (max-width: 400px) {
+    .box-productos{
+        width: 100%;
+        margin-top: 25px;
+        align-items: center;
+        .titulo-productos{
+            h1{
+                font-family: 'Poppins', sans-serif;
+                font-size:xx-large;
+                font-weight: 400;
+                text-align: center;
+            }
+        }
+    .contenedor-productos {
+        grid-template-areas:
+        "producto-1" 
+        "producto-2"
+        "producto-3" 
+        "boton-vermas"
+        ;
+        
+        .producto-1{
+            grid-area: producto-1;
+            justify-self: center;
+        }
+        .producto-2 {
+            grid-area: producto-2;
+            justify-self:center;
+        }
+        .producto-3{
+            grid-area: producto-3;
+            justify-self:center;
+        }
+        .boton-vermas{
+            grid-area: boton-vermas;
+            justify-self:center;
+        }
+    }
+        }
+    }
+@media (max-width: 400px) {
+        .section-referencias{
+            background-color: #D9D9D9;
+            .contenido-referencias{
+                h1{
+                    font-family:'Poppins', sans-serif;
+                    font-size: 35px;
+                    font-weight: 400;
+                    text-align:center;
+                    padding-top: 20px;  
+                }
+            }
+            .box-referencias {
+                grid-template-areas:
+                "card-referencia1" 
+                "card-referencia2"
+                "card-referencia3" 
+            
+                ;
+                .card-referencia1{
+                    grid-area: card-referencia1;
+                    justify-self: center;
+                }
+                .card-referencia2 {
+                    grid-area: card-referencia2;
+                    justify-self:center;
+                }
+                .card-referencia3{
+                    grid-area: card-referencia3;
+                    justify-self:center;
+                }
+            }    
+                }
+            }
+@media(max-width: 400px){
+                .banner-productos{
+                    width: 100%;
+                    height: 200px;
+                    background-image: url(../assets/img/banner-productos.png);
+                    background-position: center;
+                    display: grid;
+                    grid-template-columns: repeat(7,1fr);
+                    grid-template-rows: repeat(7,1fr);
+                   
+                    h1{
+                        grid-column: 7/2;
+                        grid-row: 4/7;
+                        align-self: center;
+                        font-size: 26px;   
+                    }
+                }
+                .titulo-productos{
+                    h1{
+                        font-family: 'Labrada', serif;
+                        font-size:25px;
+                        font-style:normal;
+                        text-align:justify; 
+                        text-align: center;  
+                    }
+                    h2{
+                        @include style ('Labrada' serif, 20px, italic, justify, center)
+                    }
+                }
+                .funciones-sistema{
+                    display: grid;
+                    width: 100%;
+                    grid-template-columns: 1fr;
+                    padding-top: 15px;
+                    padding-bottom: 35px;
+                    justify-items: center;
+                    .botones-producto{
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        gap:1rem; 
+                        .bondades-producto{
+                            display: grid;
+                            justify-content: center;
+                            .boton-elemsoft{
+                                background-color: $background-secundario;
+                            }
+                        }
+                    }
+                } 
+            }
+
+
+
+
+
+
+
+
+
+@media (max-width: 400px) {
+    .contenedor-main{
+        grid-template-areas:
+        "logo-contacto"
+        "card-contacto"; 
+            .logo-contacto{
+                grid-area: logo-contacto;
+                justify-self: center;
+                width: 50%;
+                margin:0 auto;
+                display: block;
+            }
+            .card-contacto{
+                grid-area: card-contacto;
+                justify-self:center;
+                padding: 2%;
+                width: 300px;
+                height: 504px;
+                background-color: #F5EFE6;
+                border-style: groove;
+                margin-left: 0;
+                border-radius: 15px;
+                margin-top: 30px;
+                margin-bottom: 15px;
+                .texto-card{
+                    legend{
+                        display: flex;
+                        font-family: 'Labrada', serif;
+                        margin: 15px;
+                        font-size: 15px;
+                        font-style:oblique;
+                        text-align: center;
+                        text-decoration:underline ;
+                    }
+                }
+                
+                }
+                        }
+                    }
+
+@media (max-width: 400px){
+    .piepagina-contacto{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "pie-pagina" 
+        "logo-piepagina"
+        "pie-pagina2"
+        ;
+        }
+     .pie-pagina p{
+            font-family: 'Labrada', serif;
+            font-size: 23;
+            font-style: italic;
+            text-align:justify; 
+            padding-top: 25px;
+            justify-self: center;  
+        } 
+        }
+    .pie-pagina2 p{
+            font-family: 'Labrada', serif;
+            font-size: 23;
+            font-style: italic;
+            text-align:justify;
+            padding-top: 25px;
+            justify-self: center;   
+        }  
+    .pie-pagina3 p{
+            font-family: 'Labrada', serif;
+            font-size: 23;
+            font-style: italic;
+            text-align:justify;
+            justify-self: center; 
+        }
