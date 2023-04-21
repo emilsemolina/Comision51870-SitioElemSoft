@@ -3,7 +3,14 @@
     margin: 0;
     box-sizing: border-box;
 }
+.main-nosotros{
+    min-height: 700px;
+
 .contenedor-nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 4rem;
     .nosotros-elemsoft{
     font-family: 'Labrada', serif;
@@ -22,7 +29,6 @@
   
     }
     }
-}
 .porque-nosotros{
     display: flex;
     height: 200px;
@@ -30,7 +36,8 @@
     gap: 30px;
     justify-content: center;
    align-items:center;
-   padding-top: 30px;
+   padding-top: 20%;
+   width: 100%;
 }
 .imagen-nosotros{
     height: 20 rem;
@@ -38,6 +45,8 @@
     border-radius: 2rem;
     padding-top:20px; 
 }
+}
 .acordeon-nosotros{
     width: 100%;
+}
 }

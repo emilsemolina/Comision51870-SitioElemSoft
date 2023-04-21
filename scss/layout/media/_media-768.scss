@@ -15,6 +15,8 @@
     .card-cuerpo{
         grid-area: card-cuerpo;
         justify-self: center;
+        width: 250px;
+        height: 350px;
     }
     .card-cuerpo2 {
         grid-area: card-cuerpo2;
@@ -132,6 +134,9 @@
             }
         }
     @media(max-width: 768px){
+        .main-productos{
+            padding-bottom: 300px;
+        
         .banner-productos{
             width: 100%;
             height: 230px;
@@ -145,16 +150,17 @@
                 grid-column: 6/2;
                 grid-row: 2/7;
                 align-self: center;
-                font-size: 30px;   
+                font-size: 20px;   
             }
         }
         .titulo-productos{
             h1{
                 font-family: 'Labrada', serif;
-                font-size:30px;
+                font-size:45px;
                 font-style:normal;
                 text-align:justify; 
-                text-align: center;  
+                text-align: center; 
+                padding-bottom: 30px; 
             }
             h2{
                 @include style ('Labrada' serif, 20px, italic, justify, center)
@@ -164,13 +170,15 @@
             display: grid;
             width: 100%;
             grid-template-columns: 1fr;
-            padding-top: 15px;
+            padding-top: 40px;
             padding-bottom: 35px;
             justify-items: center;
+            
             .botones-producto{
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                gap:1rem; 
+                gap:3rem; 
+                padding-top: 20%;
                 .bondades-producto{
                     display: grid;
                     justify-content: center;
@@ -179,8 +187,42 @@
                     }
                 }
             }
-        } 
     }
+}
+@media (max-width:768px){
+    .banner-portfolio{
+        background-image: url(../assets/img/banner-portfolio.png);
+       background-size: cover;
+       background-position: center;
+       img{
+        width: 100%;
+       } 
+    }
+    .contenedor-clientes{
+        padding-top: 100px;
+        padding-bottom: 50px;
+        .titulo-portfolio{
+            h1{
+                font-size: 30px;
+            }    
+        }
+        .trabajamos-clientes{
+            grid-template-areas:
+        "imgTerramar imgCPS"
+        "imgDestino imgScotia"
+        ;
+        grid-template-columns:auto;
+        img{
+            width: 80%;
+            max-height: initial;
+            padding: 2rem;
+            display: flex;
+            gap: 30px;    
+            justify-self: center;
+        }
+    }
+    }
+}
 @media (max-width: 768px){
     .footer{
         grid-template-columns: 1fr 1fr;
@@ -210,6 +252,41 @@
             font-style: italic;
             text-align:justify; 
         }
+@media (max-width: 768px){
+   .main-nosotros{
+    padding-bottom: 300px;
+   
+    .contenedor-nosotros{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+            .nosotros-elemsoft{
+            font-size: 40px;
+                h1{
+                font-size: 40px;
+            }
+                p{
+                font-size: 15px;
+            }
+        }
+    }
+    .porque-nosotros{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;   
+    }
+    .imagen-nosotros{
+        justify-content: center;
+    }
+    .acordeon-nosotros{
+        width: 100%;
+    }
+}
+}
         @media (max-width:768px){
             .contenedor-main{
                 grid-template-columns: 1fr;
@@ -251,3 +328,4 @@
                         }
                                 }
                             }
+    }
